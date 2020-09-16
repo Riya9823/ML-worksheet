@@ -1,1 +1,5 @@
-
+1. Linear Kernel is used when the data is Linearly separable, that is, it can be separated using a single Line. It is mostly used when there are a large number of features 
+     in a particular data set training a SVM with a Linear Kernel is Faster than with any other Kernel.
+   RBF(Radial Basis Function) is another popular Kernel method used in SVM models for more. RBF kernel is a function whose value depends on the distance from the origin or 
+     from some point.
+   Polynomial kernel, we simply calculate the dot product by increasing the power of the kernel.  
