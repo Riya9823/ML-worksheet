@@ -2,4 +2,69 @@
      in a particular data set training a SVM with a Linear Kernel is Faster than with any other Kernel.
    RBF(Radial Basis Function) is another popular Kernel method used in SVM models for more. RBF kernel is a function whose value depends on the distance from the origin or 
      from some point.
-   Polynomial kernel, we simply calculate the dot product by increasing the power of the kernel.  
+   Polynomial kernel, we simply calculate the dot product by increasing the power of the kernel. They are less time consuming. Intuitively, the polynomial kernel looks not only 
+     at the given features of input samples to determine their similarity, but also combinations of these.
+
+2. R-Squared is a better measure of goodness of fit of model in regression. Because the R^{2} does not depend on the magnitude of the variables. This statistic measures how 
+    successful the fit is in explaining the variation of the data. 
+    
+3. The total sum of squares(TSS): It is the squared differences between the observed dependent variable and its mean.
+   Residual sum of squares (RSS): This is also known as unexplained variation and is the portion of total variation that measures discrepancies (errors) between the actual
+    values of Y and those estimated by the regression equation.
+   Explained sum of squares (ESS): Also known as the explained variation, the ESS is the portion of total variation that measures how well the regression equation explains 
+    the relationship between X and Y.
+   They Are Related:
+                       TSS = RSS + ESS  (The total variability of the data set is equal to the variability explained by the regression line plus the unexplained variability).
+ 
+4. Gini Impurity is a measurement of the likelihood of an incorrect classification of a new instance of a random variable, if that new instance were randomly classified 
+    according to the distribution of class labels from the data set. It is lower bounded by 0, with 0 occurring if the data set contains only one class.
+    
+5. Yes, Decision trees are prone to overfitting, especially when a tree is particularly deep. This is due to the amount of specificity we look at leading to smaller sample of
+    events that meet the previous assumptions. This small sample could lead to unsound conclusions.    
+    
+6. Ensemble Technique are meta-algorithms that combine several machine learning techniques into one predictive model in order to decrease variance (bagging), bias (boosting), 
+    or improve predictions (stacking). 
+    
+7. Bagging: 1. Simplest way of combining predictions that belong to the same type.    
+            2. Aim to decrease variance, not bias.
+            3. If the classifier is unstable (high variance), then apply bagging.
+            4. Random Forest.
+   Boosting: 1. A way of combining predictions that belong to the different types.
+             2. Aim to decrease bias, not variance.
+             3. If the classifier is stable and simple (high bias) the apply boosting.
+             4. Gradient boosting.
+            
+8. Out-of-bag (OOB) error, is a method of measuring the prediction error of random forests, boosted decision trees, and other machine learning models utilizing
+    bootstrap aggregating (bagging) to sub-sample data samples used for training. Out of bag (OOB) score is a way of validating the Random forest model.  
+    
+9. K-Fold Cross Validation is where a given data set is split into a K number of sections/folds where each fold is used as a testing set at some point. It generally results
+    in a less biased model compare to other methods. 
+    
+10. Parameters which define the model architecture are referred to as hyperparameters and thus this process of searching for the ideal model architecture is referred to as
+     hyperparameter tuning.   
+    Optimal hyperparameter settings often differ for different datasets therefore, they should be tuned for each dataset.
+    
+11. When the learning rate is too large, gradient descent can inadvertently increase rather than decrease the training error.A too high learning rate will make the learning 
+     jump over minima.
+     
+12. If the algorithm is too simple then it may be on high bias and low variance condition and thus is error-prone. If algorithms fit too complex then it may be on high
+     variance and low bias. In the latter condition, the new entries will not perform well. Well, there is something between both of these conditions, known as Trade-off or
+     Bias-Variance Trade-off.  
+     
+13. The word regularize means to make things regular or acceptable. This is exactly why we use it for. Regularizations are techniques used to reduce the error by fitting a
+     function appropriately on the given training set and avoid overfitting.  
+    The commonly used regularisation techniques are :
+     1. L1 regularisation
+     2. L2 regularisation
+     3. Dropout regularisation.
+     
+14. Adaboost is more about ‘voting weights’.It increases the accuracy by giving more weightage to the target which is misclassified by the model. Adaboost works with 
+     combination of weak learners.
+    Gradient boosting is more about ‘adding gradient optimization’.It calculates the gradient of the Loss Function with respect to the prediction.It increases the accuracy by
+     minimizing the Loss Function. GB works with residual errors based on decision tree. 
+     
+15. No, Logistic regression is considered a generalized linear model because the outcome always depends on the sum of the inputs and parameters. Or in other words, the 
+     output cannot depend on the product of its parameters that is why we can not use it for non-linear data.  
+             
+
+
